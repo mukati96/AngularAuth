@@ -1,0 +1,86 @@
+.table-container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    margin: 20px;
+  
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  
+    hr {
+      border: none;
+      border-top: 1px solid #e0e0e0;
+      margin-bottom: 16px;
+    }
+  
+    table {
+      width: 100%;
+      border-collapse: collapse;
+  
+      th {
+        background-color: #e5eaee;
+        text-align: left;
+        padding: 12px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #333;
+      }
+  
+      td {
+        padding: 12px;
+        font-size: 14px;
+        color: #555;
+        border-bottom: 1px solid #f1f1f1;
+  
+        a {
+          color: #00bcd4;
+          text-decoration: none;
+          font-weight: 500;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+  
+      .img-btn {
+        background-color: #007bbd;
+        border: none;
+        border-radius: 4px;
+        padding: 4px 8px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        img {
+          width: 14px;
+          height: 14px;
+        }
+  
+        &:hover {
+          background-color: #005f94;
+        }
+      }
+    }
+  }
+  .sort-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .sort-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }

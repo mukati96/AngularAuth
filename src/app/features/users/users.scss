@@ -1,0 +1,111 @@
+.user-table-container {
+    background: #f8fdff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    font-family: "Poppins", sans-serif;
+    margin: 30px;
+  }
+  
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e4eff9;
+    padding-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  th,
+  td {
+    padding: 14px 18px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  th {
+    background: #e5eaee;
+    font-weight: 600;
+    color: #444;
+    border-bottom: 1px solid #e0e8ef;
+  }
+  
+  tr:nth-child(even) {
+    background: #fafcfe;
+  }
+  
+  .img-icon img {
+    width: 25px;
+    height: 25px;
+    background: #1e88c7;
+    border-radius: 5px;
+    padding: 3px;
+  }
+  
+  .edit-btn {
+    background: #fbbc04;
+    border: none;
+    color: #000;
+    font-weight: 600;
+    border-radius: 15px;
+    padding: 5px 15px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+  
+    &:hover {
+      background: #e0a904;
+    }
+  }
+  
+  .details-link {
+    color: #444;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: #1e88c7;
+    }
+  }
+  .search-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .search-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+  }
+  
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    color: #888;
+    pointer-events: none;
+  }
+  

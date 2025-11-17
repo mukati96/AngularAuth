@@ -1,0 +1,42 @@
+<div class="user-table-container">
+  <h2>User Table</h2>
+  <app-loader [loading]="loading()"></app-loader>
+
+  <!-- Search bar -->
+  <div class="search-wrapper">
+    <input
+      type="text"
+      [formControl]="searchControl"
+      placeholder="Search by first or last name..."
+      class="search-input"
+    />
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th><th>First name</th><th>Last Name</th><th>Gender</th>
+        <th>Email Id</th><th>Phone Number</th><th>Birth date</th>
+        <th>Image</th><th>Edit</th><th>Details</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.id }}</td>
+        <td>{{ user.firstName }}</td>
+        <td>{{ user.lastName }}</td>
+        <td>{{ user.gender }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phone }}</td>
+        <td>{{ user.birthDate }}</td>
+        <td>
+          <div class="img-icon">
+            <img [src]="user.image || 'assets/img.png'" alt="img" width="50"/>
+          </div>
+        </td>
+        <td><button class="edit-btn">Edit</button></td>
+        <td class="details-link" (click)="viewDetails(user)">View Details</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

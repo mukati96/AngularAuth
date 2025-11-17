@@ -1,0 +1,56 @@
+<div class="login-page">
+  <div class="logo">
+    <img src="/assets/logo/images.jpeg" alt="Company Logo" />
+  </div>
+  <app-loader [loading]="loading()"></app-loader>
+  <div class="login-card">
+    <h2>WELCOME BACK</h2>
+    <p>Please login to your account</p>
+
+    <form (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <i class="fa fa-user icon"></i>
+        <input
+          type="text"
+          id="username"
+          required
+          placeholder=" "
+          [value]="username()"
+          (input)="updateUsername($any($event.target).value)"
+        />
+        <label for="username">USERNAME</label>
+      </div>
+
+      <div class="form-group">
+        <i class="fa fa-lock icon"></i>
+        <input
+          type="password"
+          id="password"
+          required
+          placeholder=" "
+          [value]="password()"
+          (input)="updatePassword($any($event.target).value)"
+        />
+        <label for="password">PASSWORD</label>
+      </div>
+      
+      <div class="options">
+        <label class="remember">
+          <input
+            type="checkbox"
+            [checked]="rememberMe()"
+            (change)="toggleRememberMe($any($event.target).checked)"
+          />
+          Remember Me
+        </label>
+        <a href="#" class="forgot">Forgot password?</a>
+      </div>
+
+      <button type="submit" [disabled]="!isFormValid()">
+        <i class="fa fa-sign-in-alt"></i> LOGIN
+      </button>
+
+      <p class="signup-text">Don’t have an account? <a href="#">Sign up.</a></p>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+<div *ngIf="users() as u" class="profile-card">
+  <div class="profile-content">
+    <app-loader [loading]="loading()"></app-loader>
+
+    <div class="profile-left">
+      <h3><strong>WELCOME,</strong> {{ u.firstName }} {{ u.lastName }}</h3>
+      <p><strong>Role:</strong> {{ u.role }}</p>
+
+      <div class="info-row">
+        <div class="info-item">
+          <label>Email</label>
+          <p>{{ u.email }}</p>
+        </div>
+        <div class="info-item">
+          <label>Phone</label>
+          <p>{{ u.phone }}</p>
+        </div>
+        <div class="info-item">
+          <label>Address</label>
+          <p>{{ u.address?.address }}</p>
+        </div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-item">
+          <label>University</label>
+          <p>{{ u.university }}</p>
+        </div>
+        <div class="info-item">
+          <label>Blood Group</label>
+          <p>{{ u.bloodGroup }}</p>
+        </div>
+        <div class="info-item">
+          <label>Eye Color</label>
+          <p>{{ u.eyeColor }}</p>
+        </div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-item">
+          <label>Company</label>
+          <p>{{ u.company?.name }} ({{ u.company?.department }})</p>
+        </div>
+        <div class="info-item">
+          <label>Job Title</label>
+          <p>{{ u.company?.title }}</p>
+        </div>
+      </div>
+
+      <div class="info-row">
+        <div class="info-item">
+          <label>Bank</label>
+          <p>{{ u.bank?.cardType }} - {{ u.bank?.cardNumber }}</p>
+        </div>
+        <div class="info-item">
+          <label>Crypto</label>
+          <p>{{ u.crypto?.coin }} ({{ u.crypto?.network }})</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-right">
+      <img class="user-img" [src]="u.image" alt="{{ u.firstName }}" />
+      <i class="setting-icon fa fa-cog"></i>
+    </div>
+  </div>
+</div>

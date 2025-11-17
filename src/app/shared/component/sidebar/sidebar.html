@@ -1,0 +1,29 @@
+<div class="sidebar">
+    <div class="top-section">
+      <div class="logo">
+        <img src="assets/logo/images.jpeg" alt="Logo" />
+      </div>
+  
+      <ul class="menu">
+        <li routerLink="/profile" routerLinkActive="active">Dashboard</li>
+        <li routerLink="/users" routerLinkActive="active">User Page</li>
+        <li routerLink="/products" routerLinkActive="active">Product Page</li>
+      </ul>
+    </div>
+  
+    <div class="bottom-menu">
+        <a>
+          <img src="assets/setting.png" class="menu-icon" />
+          <span>Setting</span>
+        </a>
+        <a>
+          <img src="assets/help.png" class="menu-icon" />
+          <span>Help</span>
+        </a>
+        <a (click)="confirmLogout()">
+          <img src="assets/logout.png" class="menu-icon" />
+          <span>Logout</span>
+        </a>
+      </div>      
+  </div>
+  

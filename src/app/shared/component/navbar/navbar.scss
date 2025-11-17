@@ -1,0 +1,73 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  
+    .navbar-left {
+      .app-title {
+        font-size: 22px;
+        font-weight: 600;
+        color: #333;
+        letter-spacing: 0.5px;
+      }
+    }
+  
+    .navbar-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  
+      .icon-container {
+        position: relative;
+        cursor: pointer;
+  
+        .icon {
+          width: 22px;
+          height: 22px;
+          margin-top: 10px;
+        }
+  
+        &::after {
+          content: '';
+          position: absolute;
+          top: -3px;
+          right: -3px;
+          width: 8px;
+          height: 8px;
+          background: #ff3b3b;
+          border-radius: 50%;
+        }
+      }
+  
+      .profile-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+  
+        .profile-img {
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          border: 2px solid #e4c2cf;
+          object-fit: cover;
+          transition: transform 0.3s ease;
+        }
+  
+        .username {
+          font-weight: 500;
+          color: #333;
+        }
+  
+        &:hover .profile-img {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+  

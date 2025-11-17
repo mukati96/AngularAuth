@@ -23,6 +23,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/animations": "^20.3.9",
     "@angular/common": "^20.3.0",
     "@angular/compiler": "^20.3.0",
     "@angular/core": "^20.3.0",
@@ -32,7 +33,10 @@
     "@angular/router": "^20.3.0",
     "@angular/ssr": "^20.3.5",
     "express": "^5.1.0",
+    "font-awesome": "^4.7.0",
+    "ngx-toastr": "^19.1.0",
     "rxjs": "~7.8.0",
+    "sweetalert2": "^11.26.3",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
@@ -49,5 +53,10 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.9.2"
+  },
+  "exports": {
+    "./toastr": {
+      "default": "./toastr.css"
+    }
   }
 }
